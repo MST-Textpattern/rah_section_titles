@@ -1,15 +1,16 @@
 h1. rah_section_titles
 
-p. Plugin makes Write-tab's Section drop down box show section titles instead of section names. The rah_section_titles-plugin is somesort of answer to this "Feature Idea by Redbot":http://forum.textpattern.com/viewtopic.php?id=27744
+p. Rah_section_titles makes Write tab's _section_ drop-down list show section titles instead of section names. The rah_section_titles plugin is somesort of answer to this "feature idea by Redbot":http://forum.textpattern.com/viewtopic.php?id=27744
 
-* Version: 0.1.2
-* Updated: 2008/09/04 18:00 AM GMT+2
+* Version: 0.2
+* Updated: 2010/06/09 05:15 AM UTC
 
 h3. Table of Contents
 
 * "List of features":#list-of-features
 * "Requirements":#requirements
 * "Installation and usage":#installation-and-usage
+* "Changelog":#changelog
 
 h3(#list-of-features). List of features
 
@@ -19,20 +20,23 @@ h3(#list-of-features). List of features
 
 h3(#requirements). Requirements
 
-p. rah_section_title-plugin's minimum requirements:
+p. Rah_section_title's minimum requirements:
 
-* Textpattern 4.0.4+
-* Textpattern with jQuery
-
-p. Recommended:
-
-* Textpattern 4.0.6+
+* Textpattern 4.0.7+
+* jQuery (jQuery is bundled with Textpattern).
 
 h3(#installation-and-usage). Installation and usage
 
-p. The general simple behavior stands: paste plugin code to the plugin installer textarea and run the automatic setup. Then just activate the plugin and it's ready, section titles are shown.
+p. The general simple behavior stands: paste the plugin code to the plugin installer box and run the automatic setup. Then just activate the plugin and it's ready, section titles are shown.
 
 h3(#changelog). Changelog
+
+p. *Version 0.2*
+
+* Better compatibility with other plugins that play with the same drop-down, and better integration with TXP. Now the plugin doesn't replace the entire dropdown, but only the labels within each item.
+* Generally improved code.
+* Moved the JavaScript to @<head>@.
+* Now requires Textpattern 4.0.7 or newer.
 
 p. *Version 0.1.2*
 
