@@ -1,0 +1,43 @@
+h1. rah_section_titles
+
+p. Plugin makes Write-tab's Section drop down box show section titles instead of section names. The rah_section_titles-plugin is somesort of answer to this "Feature Idea by Redbot":http://forum.textpattern.com/viewtopic.php?id=27744
+
+* Version: 0.1.2
+* Updated: 2008/09/04 18:00 AM GMT+2
+
+h3. Table of Contents
+
+* "List of features":#list-of-features
+* "Requirements":#requirements
+* "Installation and usage":#installation-and-usage
+
+h3(#list-of-features). List of features
+
+* Simple setup: just run the automatic plugin setup and activate.
+* Shows section titles instead of names.
+* Outputs valid XHTML, and tiny and clean JavaScript code.
+
+h3(#requirements). Requirements
+
+p. rah_section_title-plugin's minimum requirements:
+
+* Textpattern 4.0.4+
+* Textpattern with jQuery
+
+p. Recommended:
+
+* Textpattern 4.0.6+
+
+h3(#installation-and-usage). Installation and usage
+
+p. The general simple behavior stands: paste plugin code to the plugin installer textarea and run the automatic setup. Then just activate the plugin and it's ready, section titles are shown.
+
+h3(#changelog). Changelog
+
+p. *Version 0.1.2*
+
+* Added missing @<br />@.
+
+p. *Version 0.1*
+
+* Initial release.
