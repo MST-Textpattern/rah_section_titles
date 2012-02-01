@@ -1,9 +1,9 @@
 h1. rah_section_titles
 
-p. Rah_section_titles makes Write tab's _section_ drop-down list show section titles instead of section names. The rah_section_titles plugin is some sort of an answer to "this feature request by Redbot":http://forum.textpattern.com/viewtopic.php?id=27744.
+p. Rah_section_titles makes Write tab's _section_ drop-down list show section titles instead of section names. The rah_section_titles plugin is some sort of an answer to "this feature request made by Redbot":http://forum.textpattern.com/viewtopic.php?id=27744.
 
-* Version: 0.3
-* Updated: 2011/06/28 11:45 PM UTC
+* Version: 0.4
+* Updated: 2011/11/25 11:15 PM UTC
 
 h3. Table of Contents
 
@@ -14,22 +14,27 @@ h3. Table of Contents
 
 h3(#list-of-features). List of features
 
-* Simple setup: just run the automatic plugin setup and activate.
-* Shows section titles instead of names.
-* Outputs valid XHTML, and tiny and clean JavaScript code.
+* Admin-side Write tab shows section titles instead of names.
+* Very easy to set up: just run the automatic plugin setup and activate.
+* Outputs compact, clean JavaScript code.
 
 h3(#requirements). Requirements
 
 p. Rah_section_title's minimum requirements:
 
-* Textpattern 4.0.7+
+* Textpattern v4.4.0 or newer.
 * jQuery (jQuery is bundled with Textpattern).
 
-h3(#installation-and-usage). Installation and usage
+h3(#installation-and-usage). Installation
 
-p. The general simple behavior stands: paste the plugin code to the plugin installer box and run the automatic setup. Then just activate the plugin and it's ready, section titles are shown.
+p. The general simple behavior stands: paste the plugin code to the plugin installer box found on _Plugins_ panel, and run the automatic setup. When the installer is done, just activate the plugin. That's it. Now you should see list section titles on the Write's Sections field.
 
 h3(#changelog). Changelog
+
+p. *Version 0.4*
+
+* Now uses Textpattern's @escape_js()@ to escape the strings used in JavaScript, and @script_js()@ to return the JavaScript wrapped in script tags.
+* As of version 0.4, requires Textpattern version 4.4.0 or newer.
 
 p. *Version 0.3*
 

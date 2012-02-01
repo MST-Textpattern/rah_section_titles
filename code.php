@@ -1,7 +1,7 @@
 <?php	##################
 	#
 	#	rah_section_titles-plugin for Textpattern
-	#	version 0.3
+	#	version 0.4
 	#	by Jukka Svahn
 	#	http://rahforum.biz
 	#
@@ -33,18 +33,14 @@
 		
 		foreach($rs as $a)
 			$out[] = 
-				'		$("select[name=Section] option[value='.$a['name'].']").text("'.
-					str_replace('"','\"',$a['title']).
-				'");'.n;
+				'	$("select[name=Section] option[value=\''.escape_js($a['name']).'\']").text("'.
+					escape_js($a['title']).'");'.n;
 		
 		echo 
-			n.
-			'<script type="text/javascript">'.n.
-			'	<!--'.n.
-			'	$(document).ready(function() {'.n.
+			script_js(
+				'$(document).ready(function(){'.n.
 					implode('',$out).
-			'	});'.n.
-			'	-->'.n.
-			'</script>'.n;
+				'});'
+			);
 	}
 ?>
