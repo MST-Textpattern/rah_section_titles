@@ -1,1 +1,0 @@
-Write-tab's section select field uses section titles instead names
