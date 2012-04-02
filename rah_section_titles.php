@@ -13,36 +13,37 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-	if(@txpinterface == 'admin')
-		register_callback('rah_section_titles', 'admin_side', 'head_end');
+	if(@txpinterface == 'admin') {
+		register_callback('rah_section_titles', 'article_ui', 'section');
+	}
 
-	function rah_section_titles() {
+/**
+ * Replaces section list
+ * @param string $event
+ * @param string $step
+ * @param string $default
+ * @param array $data
+ */
+
+	function rah_section_titles($event, $step, $default, $data) {
 		
-		global $event;
+		$rs = safe_rows('name, title', 'txp_section', "name != 'default'");
 		
-		if($event != 'article')
+		if(!$rs) {
 			return;
+		}
 		
-		$rs = 
-			safe_rows(
-				'title,name',
-				'txp_section',
-				"name != 'default' ORDER BY title ASC"
-			);
+		$out = array();
 		
-		if(!$rs)
-			return;
+		foreach($rs as $a) {
+			$out[$a['name']] = $a['title'];
+		}
 		
-		foreach($rs as $a)
-			$out[] = 
-				'	$("select[name=Section] option[value=\''.escape_js($a['name']).'\']").text("'.
-					escape_js($a['title']).'");'.n;
-		
-		echo 
-			script_js(
-				'$(document).ready(function(){'.n.
-					implode('',$out).
-				'});'
+		return 
+			preg_replace(
+				'/<select[^>]*?>[\s\S]*?<\/select>/',
+				selectInput('Section', $out, $data['Section']),
+				$default
 			);
 	}
 ?>

@@ -20,6 +20,10 @@ p. The general simple behavior stands: paste the plugin code to the plugin insta
 
 h2. Changelog
 
+h3. Version 0.5 - upcoming
+
+* Now works server-side by using pluggable_ui instead of JavaScript.
+
 h3. Version 0.4 - 2011/11/25
 
 * Now uses Textpattern's @escape_js()@ to escape the strings used in JavaScript, and @script_js()@ to return the JavaScript wrapped in script tags.
