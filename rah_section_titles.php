@@ -27,7 +27,7 @@
 
 	function rah_section_titles($event, $step, $default, $data) {
 		
-		$rs = safe_rows('name, title', 'txp_section', "name != 'default'");
+		$rs = safe_rows('name, title', 'txp_section', "name != 'default' ORDER BY title ASC");
 		
 		if(!$rs) {
 			return;
