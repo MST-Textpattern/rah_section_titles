@@ -43,7 +43,7 @@
 		return 
 			preg_replace(
 				'/<select[^>]*?>[\s\S]*?<\/select>/',
-				selectInput('Section', $out, $data['Section']),
+				selectInput('Section', $out, $data['Section'], '', '', 'section'),
 				$default
 			);
 	}
