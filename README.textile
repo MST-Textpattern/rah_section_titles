@@ -23,6 +23,10 @@ p. The plugin is now in use and the Write panel's sections list displays titles.
 
 h2. Changelog
 
+h3. Version 0.6 - upcoming
+
+* Fixed: Reintroduced missing HTML @id@ attribute.
+
 h3. Version 0.5 - 2012/07/30
 
 * Fixed: Sorting. Sections are sorted by the title and not the name.
