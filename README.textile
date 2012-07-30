@@ -1,5 +1,7 @@
 h1. rah_section_titles
 
+p. "Project page":http://rahforum.biz/plugins/rah_section_titles | "Twitter":http://twitter.com/gocom | "GitHub":https://github.com/gocom/rah_section_titles | "Support forum":http://forum.textpattern.com/viewtopic.php?id=27749 | "Donate":http://rahforum.biz/donate/rah_section_titles
+
 p. Rah_section_titles makes "Textpattern's":http://textpattern.com Write tab's _section_ drop-down list show section titles instead of section names. The rah_section_titles plugin is some sort of an answer to "this feature request made by Redbot":http://forum.textpattern.com/viewtopic.php?id=27744.
 
 h2. List of features
