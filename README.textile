@@ -23,7 +23,7 @@ p. The plugin is now in use and the Write panel's sections list displays titles.
 
 h2. Changelog
 
-h3. Version 0.5 - upcoming
+h3. Version 0.5 - 2012/07/30
 
 * Fixed: Sorting. Sections are sorted by the title and not the name.
 * Changed: Now works server-side by using pluggable_ui instead of JavaScript.
