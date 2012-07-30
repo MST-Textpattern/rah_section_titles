@@ -2,13 +2,7 @@ h1. rah_section_titles
 
 p. "Project page":http://rahforum.biz/plugins/rah_section_titles | "Twitter":http://twitter.com/gocom | "GitHub":https://github.com/gocom/rah_section_titles | "Support forum":http://forum.textpattern.com/viewtopic.php?id=27749 | "Donate":http://rahforum.biz/donate/rah_section_titles
 
-p. Rah_section_titles makes "Textpattern's":http://textpattern.com Write tab's _section_ drop-down list show section titles instead of section names. The rah_section_titles plugin is some sort of an answer to "this feature request made by Redbot":http://forum.textpattern.com/viewtopic.php?id=27744.
-
-h2. List of features
-
-* Admin-side Write tab shows section titles instead of names.
-* Very easy to set up: just run the automatic plugin setup and activate.
-* Outputs compact, clean JavaScript code.
+p. Rah_section_titles makes "Textpattern's":http://textpattern.com Write panel's _section_ drop-down list display section titles instead of names.
 
 h2. Requirements
 
@@ -16,15 +10,23 @@ p. Rah_section_title's minimum requirements:
 
 * Textpattern v4.4.0 or newer.
 
-h2. Installation
+h2. Installing
 
-p. The general simple behavior stands: paste the plugin code to the plugin installer box found on _Plugins_ panel, and run the automatic setup. When the installer is done, just activate the plugin. That's it. Now you should see list section titles on the Write's Sections field.
+p. Rah_section_titles' installation follows the standard plugin installation steps.
+
+# Download the plugin installation code.
+# Copy and paste the installation code into the _Install plugin_ box of your Textpattern Plugin pane.
+# Run the automated setup.
+# After the setup is done, activate the plugin. Done.
+
+p. The plugin is now in use and the Write panel's sections list displays titles.
 
 h2. Changelog
 
 h3. Version 0.5 - upcoming
 
-* Now works server-side by using pluggable_ui instead of JavaScript.
+* Changed: Now works server-side by using pluggable_ui instead of JavaScript.
+* Textpattern v4.5.0 compatibility.
 
 h3. Version 0.4 - 2011/11/25
 
