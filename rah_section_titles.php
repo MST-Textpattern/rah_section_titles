@@ -18,11 +18,12 @@
 	}
 
 /**
- * Replaces section list
+ * Replaces the section list
  * @param string $event
  * @param string $step
  * @param string $default
  * @param array $data
+ * @return HTML
  */
 
 	function rah_section_titles($event, $step, $default, $data) {
