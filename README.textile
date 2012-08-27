@@ -23,7 +23,7 @@ p. The plugin is now in use and the Write panel's sections list displays titles.
 
 h2. Changelog
 
-h3. Version 0.7 - upcoming
+h3. Version 0.7 - 2012/08/27
 
 * Load the plugin on async requests.
 * Now requires Textpattern v4.5.0.
