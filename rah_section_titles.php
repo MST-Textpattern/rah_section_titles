@@ -13,9 +13,7 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-	if(@txpinterface == 'admin') {
-		register_callback('rah_section_titles', 'article_ui', 'section');
-	}
+	register_callback('rah_section_titles', 'article_ui', 'section');
 
 /**
  * Replaces the section list
